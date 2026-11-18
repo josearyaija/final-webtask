@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore Forma Woodworks' bespoke furniture collection with our real-time 3D interactive timber configurator.">
+  <title>Furniture Collection & 3D Studio — Forma Woodworks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bar"></div>
+  <div class="cursor"></div>
+
+  <!-- Navigation Header -->
+  <header>
+    <a href="index.html" class="logo">FORMA <i>WOODWORKS</i></a>
+    <button class="menu" aria-label="Toggle navigation menu">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Studio</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="collection.html" class="active">Collection</a>
+      <a href="store.html">Online Store</a>
+      <a href="process.html">Process</a>
+      <a class="quote-link" href="contact.html">Start a project ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header Hero -->
+    <section class="page-header">
+      <div class="page-header-content">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> <span>/</span> <span>Collection</span>
+        </div>
+        <div class="eyebrow light">THE STUDIO COLLECTION</div>
+        <h1>Pieces with <em>presence.</em></h1>
+        <p>Quietly sculptural, made for everyday rituals. Our studio collection is a starting point for dialogue: every design can be tailored in custom dimensions, hardwood species, and hand-rubbed finishes.</p>
+      </div>
+    </section>
+
+    <!-- Room by Room Showcase -->
+    <section class="showroom section" id="showroom">
+      <div class="headrow">
+        <div>
+          <div class="eyebrow light">ROOM CURATIONS</div>
+          <h2>Designed for <em>living.</em></h2>
+        </div>
+        <p>Select a room to explore curated pieces and joinery specifications.</p>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-room="Living room">Living room</button>
+        <button class="tab" data-room="Bedroom">Bedroom</button>
+        <button class="tab" data-room="Kitchen">Kitchen</button>
+        <button class="tab" data-room="Dining">Dining</button>
+      </div>
+
+      <div class="showcase">
+        <img id="room-img" loading="lazy" src="images/showroom-living.jpg" alt="Living room furniture showcase">
+        <div class="show-info">
+          <div class="eyebrow light">MADE TO MEASURE</div>
+          <h3 id="room-title">The Rowan Living Room</h3>
+          <p>Quietly sculptural, made for modern living. Low-profile credenzas, floating oak shelves, and soft-cornered walnut cocktail tables.</p>
+          <div class="material">MATERIAL · SOLID WALNUT & NATURAL OAK<br>FINISH · HARDWAX OIL / SATIN</div>
+          <div>
+            <a href="contact.html" class="btn">REQUEST SPEC SHEET & PRICING ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive 3D Configurator Studio -->
+    <section class="studio section">
+      <div>
+        <div class="eyebrow">INTERACTIVE CONFIGURATOR</div>
+        <h2>Imagine it.<br><em>Design it.</em></h2>
+        <p style="color:#6c6a62;line-height:1.8;font-size:15px;margin-bottom:20px;">Use our 3D configurator below to explore proportions, timber species, and surface sheens. Watch how natural light interacts with different timber finishes.</p>
+        <p style="color:#6c6a62;line-height:1.8;font-size:14px;">Every piece is made to order in our Cotswolds workshop. Need bespoke dimensions or custom integrated power? We adjust any design to your millimeter specification.</p>
+        <div style="margin-top: 25px;">
+          <a href="contact.html" class="btn btn-dark">REQUEST CUSTOM DRAWING ↗</a>
+        </div>
+      </div>
+
+      <div class="config">
+        <div class="preview">
+          <div class="furniture" id="furniture"></div>
+        </div>
+
+        <label>Furniture piece
+          <select id="piece">
+            <option value="Console table">The Rowan Console Table (170cm)</option>
+            <option value="Dining table">The Gather Dining Table (220cm)</option>
+            <option value="Sideboard">The Trestle Sideboard (195cm)</option>
+            <option value="Desk">The Studio North Desk (180cm)</option>
+          </select>
+        </label>
+
+        <label>Hardwood selection
+          <select id="woodsel">
+            <option value="#68452d">American Black Walnut</option>
+            <option value="#bd9b6e">Natural European White Oak</option>
+            <option value="#85543b">Honduran Mahogany</option>
+            <option value="#b18a59">Burmese Teak</option>
+          </select>
+        </label>
+
+        <label>Surface finish & sheen
+          <select id="finish">
+            <option value="1">Natural Organic Oil (Warm, tactile sheen)</option>
+            <option value=".78">Ultra-Matte Hardwax (Raw, natural appearance)</option>
+            <option value="1.2">Satin Luster (Refined, silky reflection)</option>
+          </select>
+        </label>
+
+        <div class="estimate">
+          <strong>Interactive Preview:</strong> Dimensions, joinery details, and exact timber flitches are individually selected upon commission approval.
+        </div>
+      </div>
+    </section>
+
+    <!-- Timber Species Guide -->
+    <section class="materials section section-dark">
+      <div class="headrow">
+        <div>
+          <div class="eyebrow light">MATERIAL PROVENANCE</div>
+          <h2>Our signature <em>timbers.</em></h2>
+        </div>
+        <p>Click any wood species below to automatically load its tone into the 3D configurator above.</p>
+      </div>
+
+      <div class="wood-grid">
+        <div class="wood active" data-wood="#68452d">
+          <span>
+            <b>American Black Walnut</b>
+            <p>Rich chocolate tone · fine pores · velvety grain</p>
+          </span>
+        </div>
+
+        <div class="wood" data-wood="#bd9b6e">
+          <span>
+            <b>European White Oak</b>
+            <p>Golden honey · pronounced cathedral arches · high density</p>
+          </span>
+        </div>
+
+        <div class="wood" data-wood="#85543b">
+          <span>
+            <b>Honduran Mahogany</b>
+            <p>Warm terracotta and auburn · exceptional dimensional stability</p>
+          </span>
+        </div>
+
+        <div class="wood" data-wood="#b18a59">
+          <span>
+            <b>Burmese Teak</b>
+            <p>Golden amber hue · natural silica oils · water resistant</p>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner -->
+    <section class="cta">
+      <div>
+        <div class="eyebrow light" style="justify-content:center">BESPOKE VARIATIONS</div>
+        <h2>Need a piece in custom <em>proportions?</em></h2>
+        <p>Whether you need an extended 12-person dining table or a credenza to fit an exact alcove, we tailor all collection pieces to your floor plan.</p>
+        <a href="contact.html" class="btn">REQUEST A BESPOKE SIZE ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="footer">
+    <div class="foot-top">
+      <div>
+        <a href="index.html" class="logo">FORMA <i>WOODWORKS</i></a>
+        <p>Thoughtful bespoke furniture and architectural woodwork, crafted with intention and built to last generations.</p>
+      </div>
+      <div>
+        <b>EXPLORE</b>
+        <a href="index.html">Home</a>
+        <a href="about.html">The Studio</a>
+        <a href="services.html">Our Services</a>
+        <a href="projects.html">Selected Projects</a>
+        <a href="collection.html">Furniture Collection</a>
+        <a href="store.html">Online Store</a>
+        <a href="process.html">Workshop Process</a>
+      </div>
+      <div>
+        <b>SERVICES</b>
+        <a href="services.html#kitchens">Kitchen Cabinetry</a>
+        <a href="services.html#furniture">Custom Furniture</a>
+        <a href="services.html#wardrobes">Wardrobes & Closets</a>
+        <a href="services.html#office">Executive Office</a>
+        <a href="services.html#architectural">Architectural Millwork</a>
+        <a href="services.html#dining">Tables & Seating</a>
+      </div>
+      <div>
+        <b>COMMISSIONS & STUDIO</b>
+        <a href="mailto:hello@formawood.example">hello@formawood.example</a>
+        <a href="tel:+442079460123">+44 (0) 20 7946 0123</a>
+        <a href="contact.html">Request a Consultation</a>
+        <form id="newsletter">
+          <label style="font-size:10px;text-transform:uppercase;color:#858076;letter-spacing:1px;">Studio Notes</label>
+          <input type="email" required placeholder="Enter your email">
+          <button class="btn btn-sm" type="submit">JOIN ↗</button>
+        </form>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Forma Woodworks Ltd. All rights reserved.</span>
+      <span>Clerkenwell Studio & Cotswolds Workshop · Visits by appointment</span>
+    </div>
+  </footer>
+
+  <a class="whats" href="https://wa.me/442079460123?text=Hello%2C%20I%27d%20like%20to%20discuss%20a%20custom%20woodworking%20project" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+  <button class="top" aria-label="Back to top">↑</button>
+
+  <div class="modal" id="modal">
+    <button aria-label="Close">×</button>
+    <img alt="Expanded photograph">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

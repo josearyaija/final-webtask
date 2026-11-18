@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Browse Forma Woodworks' online furniture showroom. Handcrafted bespoke tables, credenzas, desks, and seating with transparent pricing in UGX.">
+  <title>Online Store — Forma Woodworks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bar"></div>
+  <div class="cursor"></div>
+
+  <!-- Main Navigation Header -->
+  <header>
+    <a href="index.html" class="logo">FORMA <i>WOODWORKS</i></a>
+    <button class="menu" aria-label="Toggle navigation menu">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Studio</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="collection.html">Collection</a>
+      <a href="store.html" class="active">Online Store</a>
+      <a href="process.html">Process</a>
+      <a class="quote-link" href="contact.html">Start a project ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header Hero -->
+    <section class="page-header">
+      <div class="page-header-content">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> <span>/</span> <span>Online Store</span>
+        </div>
+        <div class="eyebrow light">ONLINE SHOWROOM & FURNITURE CATALOG</div>
+        <h1>Curated pieces,<br><em>made for enduring living.</em></h1>
+        <p>Explore our made-to-order handcrafted furniture collection with transparent pricing in Ugandan Shillings (UGX). Every piece is individually built from certified sustainable hardwoods, finished with tactile organic oils.</p>
+      </div>
+    </section>
+
+    <!-- Online Store Section -->
+    <section class="section">
+      <div class="headrow">
+        <div>
+          <div class="eyebrow">STUDIO CATALOGUE</div>
+          <h2>Available <em>furniture pieces.</em></h2>
+        </div>
+        <p>Click any piece to preview high-resolution joinery details, or order directly via WhatsApp with your tailored specifications.</p>
+      </div>
+
+      <!-- Controls: Category Filters & Price Sorting -->
+      <div class="store-controls">
+        <div class="store-filters">
+          <button class="filter store-filter-btn active" data-category="all">All Pieces</button>
+          <button class="filter store-filter-btn" data-category="dining">Dining Tables</button>
+          <button class="filter store-filter-btn" data-category="credenza">Credenzas & Consoles</button>
+          <button class="filter store-filter-btn" data-category="desk">Desks & Work</button>
+          <button class="filter store-filter-btn" data-category="bedroom">Beds & Bedroom</button>
+          <button class="filter store-filter-btn" data-category="living">Living Room</button>
+          <button class="filter store-filter-btn" data-category="seating">Seating</button>
+        </div>
+
+        <div class="store-sort-wrapper">
+          <label for="store-sort">Sort by:</label>
+          <select id="store-sort" class="store-sort-select">
+            <option value="default">Featured Selection</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Store Product Grid -->
+      <div class="store-grid" id="store-grid">
+
+        <!-- 01: The Rowan Walnut Credenza -->
+        <article class="store-card" data-category="credenza" data-price="8400000">
+          <div class="store-card-img">
+            <span class="store-badge">Handcrafted</span>
+            <span class="store-tag">American Walnut</span>
+            <img loading="lazy" src="images/service-furniture.jpg" alt="The Rowan Walnut Credenza">
+          </div>
+          <div class="store-card-body">
+            <div class="store-card-category">Credenzas & Consoles</div>
+            <h3 class="store-title">The Rowan Walnut Credenza</h3>
+            <p class="store-meta">Sliding tambour doors, hand-dovetailed English sycamore internal drawers, and subtle soft-bevel perimeter edges.</p>
+            <div class="store-specs">
+              <span><strong>Hardwood:</strong> Solid American Black Walnut</span>
+              <span><strong>Dimensions:</strong> 200cm W × 50cm D × 75cm H</span>
+              <span><strong>Lead Time:</strong> 4–6 Weeks (Made to Order)</span>
+            </div>
+            <div class="store-footer">
+              <div class="store-price-block">
+                <span class="store-price-label">Price in UGX</span>
+                <span class="store-price-val">UGX 8,400,000</span>
+              </div>
+              <button class="store-buy-btn" data-title="The Rowan Walnut Credenza" data-price="UGX 8,400,000" data-specs="Solid Walnut · 200cm W x 50cm D x 75cm H">
+                ORDER PIECE ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02: The Gather Trestle Dining Table -->
+        <article class="store-card" data-category="dining" data-price="13800000">
+          <div class="store-card-img">
+            <span class="store-badge">Signature Piece</span>
+            <span class="store-tag">European Oak</span>
+            <img loading="lazy" src="images/service-dining.jpg" alt="The Gather Trestle Dining Table">
+          </div>
+          <div class="store-card-body">
+            <div class="store-card-category">Dining Tables</div>
+            <h3 class="store-title">The Gather Trestle Dining Table</h3>
+            <p class="store-meta">Through-tenon trestle architecture with solid breadboard ends allowing natural wood movement. Seats 8 to 10 guests.</p>
+            <div class="store-specs">
+              <span><strong>Hardwood:</strong> European White Oak (or Walnut)</span>
+              <span><strong>Dimensions:</strong> 260cm L × 100cm W × 76cm H</span>
+              <span><strong>Lead Time:</strong> 5–7 Weeks (Made to Order)</span>
+            </div>
+            <div class="store-footer">
+              <div class="store-price-block">
+                <span class="store-price-label">Price in UGX</span>
+                <span class="store-price-val">UGX 13,800,000</span>
+              </div>
+              <button class="store-buy-btn" data-title="The Gather Trestle Dining Table" data-price="UGX 13,800,000" data-specs="European White Oak · 260cm L x 100cm W x 76cm H">
+                ORDER PIECE ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03: The Studio North Executive Desk -->
+        <article class="store-card" data-category="desk" data-price="9600000">
+          <div class="store-card-img">
+            <span class="store-badge">Executive</span>
+            <span class="store-tag">Walnut & Brass</span>
+            <img loading="lazy" src="images/service-office.jpg" alt="The Studio North Executive Desk">
+          </div>
+          <div class="store-card-body">
+            <div class="store-card-category">Desks & Work</div>
+            <h3 class="store-title">The Studio North Executive Desk</h3>
+            <p class="store-meta">Solid timber construction with integrated invisible sub-surface cable raceways, concealed power access, and magnetic stationery drawers.</p>
+            <div class="store-specs">
+              <span><strong>Hardwood:</strong> Solid Walnut & Cast Brass Accents</span>
+              <span><strong>Dimensions:</strong> 180cm W × 85cm D × 75cm H</span>
+              <span><strong>Lead Time:</strong> 4–6 Weeks (Made to Order)</span>
+            </div>
+            <div class="store-footer">
+              <div class="store-price-block">
+                <span class="store-price-label">Price in UGX</span>
+                <span class="store-price-val">UGX 9,600,000</span>
+              </div>
+              <button class="store-buy-btn" data-title="The Studio North Executive Desk" data-price="UGX 9,600,000" data-specs="Solid Walnut & Brass · 180cm W x 85cm D x 75cm H">
+                ORDER PIECE ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04: The Sculptural Chamfer Console -->
+        <article class="store-card" data-category="credenza" data-price="5200000">
+          <div class="store-card-img">
+            <span class="store-badge">Sculptural</span>
+            <span class="store-tag">Honduran Mahogany</span>
+            <img loading="lazy" src="images/project-custom.jpg" alt="The Sculptural Chamfer Console">
+          </div>
+          <div class="store-card-body">
+            <div class="store-card-category">Credenzas & Consoles</div>
+            <h3 class="store-title">The Sculptural Chamfer Console</h3>
+            <p class="store-meta">An entry console characterized by dramatic 45-degree chamfered edge profiling, a suspended lower display shelf, and hand-rubbed beeswax finish.</p>
+            <div class="store-specs">
+              <span><strong>Hardwood:</strong> Honduran Mahogany</span>
+              <span><strong>Dimensions:</strong> 160cm W × 40cm D × 85cm H</span>
+              <span><strong>Lead Time:</strong> 3–5 Weeks (Made to Order)</span>
+            </div>
+            <div class="store-footer">
+              <div class="store-price-block">
+                <span class="store-price-label">Price in UGX</span>
+                <span class="store-price-val">UGX 5,200,000</span>
+              </div>
+              <button class="store-buy-btn" data-title="The Sculptural Chamfer Console" data-price="UGX 5,200,000" data-specs="Honduran Mahogany · 160cm W x 40cm D x 85cm H">
+                ORDER PIECE ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05: The Still Low-Profile Bedstead -->
+        <article class="store-card" data-category="bedroom" data-price="11200000">
+          <div class="store-card-img">
+            <span class="store-badge">Bedroom Suite</span>
+            <span class="store-tag">English Ash</span>
+            <img loading="lazy" src="images/project-bedroom.jpg" alt="The Still Low-Profile Bedstead">
+          </div>
+          <div class="store-card-body">
+            <div class="store-card-category">Beds & Bedroom</div>
+            <h3 class="store-title">The Still Low-Profile Bedstead</h3>
+            <p class="store-meta">Solid English ash platform frame with cantilevered floating bedside ledges, ergonomic angled headrest, and solid beech sprung slats.</p>
+            <div class="store-specs">
+              <span><strong>Hardwood:</strong> English Ash & White Oak</span>
+              <span><strong>Dimensions:</strong> King Size (210cm L × 190cm W)</span>
+              <span><strong>Lead Time:</strong> 6–8 Weeks (Made to Order)</span>
+            </div>
+            <div class="store-footer">
+              <div class="store-price-block">
+                <span class="store-price-label">Price in UGX</span>
+                <span class="store-price-val">UGX 11,200,000</span>
+              </div>
+              <button class="store-buy-btn" data-title="The Still Low-Profile Bedstead" data-price="UGX 11,200,000" data-specs="English Ash · King Size (210cm L x 190cm W)">
+                ORDER PIECE ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 06: The Calm Morning Media Unit -->
+        <article class="store-card" data-category="living" data-price="7400000">
+          <div class="store-card-img">
+            <span class="store-badge">Acoustic Slats</span>
+            <span class="store-tag">White Oak</span>
+            <img loading="lazy" src="images/project-living.jpg" alt="The Calm Morning Media Unit">
+          </div>
+          <div class="store-card-body">
+            <div class="store-card-category">Living Room</div>
+            <h3 class="store-title">The Calm Morning Media Unit</h3>
+            <p class="store-meta">Precision acoustic timber slatted doors allowing infrared remote signals to pass through without opening. Ventilated back panel for media equipment.</p>
+            <div class="store-specs">
+              <span><strong>Hardwood:</strong> Quartersawn European Oak</span>
+              <span><strong>Dimensions:</strong> 220cm W × 45cm D × 48cm H</span>
+              <span><strong>Lead Time:</strong> 4–6 Weeks (Made to Order)</span>
+            </div>
+            <div class="store-footer">
+              <div class="store-price-block">
+                <span class="store-price-label">Price in UGX</span>
+                <span class="store-price-val">UGX 7,400,000</span>
+              </div>
+              <button class="store-buy-btn" data-title="The Calm Morning Media Unit" data-price="UGX 7,400,000" data-specs="Quartersawn Oak · 220cm W x 45cm D x 48cm H">
+                ORDER PIECE ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 07: The Trestle Dining Bench & Seating -->
+        <article class="store-card" data-category="seating" data-price="3900000">
+          <div class="store-card-img">
+            <span class="store-badge">Hand-Stitched</span>
+            <span class="store-tag">Oak & Leather</span>
+            <img loading="lazy" src="images/showroom-dining.jpg" alt="The Trestle Dining Bench & Seating">
+          </div>
+          <div class="store-card-body">
+            <div class="store-card-category">Seating & Benches</div>
+            <h3 class="store-title">The Trestle Dining Bench</h3>
+            <p class="store-meta">Solid French oak bench with through-tenon joint wedges, paired with optional vegetable-tanned saddle leather strapped seating cushion.</p>
+            <div class="store-specs">
+              <span><strong>Hardwood:</strong> French Oak & Saddle Leather</span>
+              <span><strong>Dimensions:</strong> 180cm L × 40cm W × 46cm H</span>
+              <span><strong>Lead Time:</strong> 3–4 Weeks (Made to Order)</span>
+            </div>
+            <div class="store-footer">
+              <div class="store-price-block">
+                <span class="store-price-label">Price in UGX</span>
+                <span class="store-price-val">UGX 3,900,000</span>
+              </div>
+              <button class="store-buy-btn" data-title="The Trestle Dining Bench" data-price="UGX 3,900,000" data-specs="French Oak & Saddle Leather · 180cm L x 40cm W x 46cm H">
+                ORDER PIECE ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 08: The Minimalist Wardrobe & Armoire -->
+        <article class="store-card" data-category="bedroom" data-price="15500000">
+          <div class="store-card-img">
+            <span class="store-badge">Freestanding</span>
+            <span class="store-tag">Smoked Oak</span>
+            <img loading="lazy" src="images/showroom-bedroom.jpg" alt="The Minimalist Wardrobe & Armoire">
+          </div>
+          <div class="store-card-body">
+            <div class="store-card-category">Beds & Bedroom</div>
+            <h3 class="store-title">The Minimalist Wardrobe & Armoire</h3>
+            <p class="store-meta">Freestanding tall cabinet with integrated recessed warm LED strip illumination, aromatic cedar lining, and internal valet pull-outs.</p>
+            <div class="store-specs">
+              <span><strong>Hardwood:</strong> Smoked Oak & Aromatic Cedar</span>
+              <span><strong>Dimensions:</strong> 180cm W × 65cm D × 220cm H</span>
+              <span><strong>Lead Time:</strong> 6–8 Weeks (Made to Order)</span>
+            </div>
+            <div class="store-footer">
+              <div class="store-price-block">
+                <span class="store-price-label">Price in UGX</span>
+                <span class="store-price-val">UGX 15,500,000</span>
+              </div>
+              <button class="store-buy-btn" data-title="The Minimalist Wardrobe & Armoire" data-price="UGX 15,500,000" data-specs="Smoked Oak & Cedar · 180cm W x 65cm D x 220cm H">
+                ORDER PIECE ↗
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 09: The Rowan Sculptural Cocktail Table -->
+        <article class="store-card" data-category="living" data-price="4800000">
+          <div class="store-card-img">
+            <span class="store-badge">Stone Inset</span>
+            <span class="store-tag">Walnut & Limestone</span>
+            <img loading="lazy" src="images/showroom-living.jpg" alt="The Rowan Sculptural Cocktail Table">
+          </div>
+          <div class="store-card-body">
+            <div class="store-card-category">Living Room</div>
+            <h3 class="store-title">The Rowan Cocktail Table</h3>
+            <p class="store-meta">Low sculptural coffee table with curved corners, soft rounded edges, and an integrated honed limestone inset trivet for warm tea and coffee pots.</p>
+            <div class="store-specs">
+              <span><strong>Hardwood:</strong> American Walnut & Honed Limestone</span>
+              <span><strong>Dimensions:</strong> 140cm L × 75cm W × 40cm H</span>
+              <span><strong>Lead Time:</strong> 3–5 Weeks (Made to Order)</span>
+            </div>
+            <div class="store-footer">
+              <div class="store-price-block">
+                <span class="store-price-label">Price in UGX</span>
+                <span class="store-price-val">UGX 4,800,000</span>
+              </div>
+              <button class="store-buy-btn" data-title="The Rowan Cocktail Table" data-price="UGX 4,800,000" data-specs="American Walnut & Limestone · 140cm L x 75cm W x 40cm H">
+                ORDER PIECE ↗
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="store-inquire-note">
+        <strong>Custom Sizing & Timber Customization:</strong> All pieces in our online store can be made in custom dimensions or alternative wood species (such as Teak or Sycamore). Contact us via WhatsApp to request bespoke sizing and quotation.
+      </div>
+    </section>
+
+    <!-- Workshop Guarantee Section -->
+    <section class="section section-muted">
+      <div class="headrow">
+        <div>
+          <div class="eyebrow">BUYING WITH CONFIDENCE</div>
+          <h2>The Forma <em>guarantee.</em></h2>
+        </div>
+        <p>Our commitment to transparent pricing and lifelong structural integrity.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div style="background:var(--white); padding:32px; border-radius:3px; border:1px solid #dcd5c9;">
+          <h4 style="font-family:var(--display); font-size:18px; margin-bottom:10px;">Transparent Pricing in UGX</h4>
+          <p style="color:#635e54; font-size:14px; line-height:1.75;">Listed prices reflect direct workshop production with zero retail markup. Each quote includes full timber selection, multi-coat finishing, and complimentary woodcare oil.</p>
+        </div>
+
+        <div style="background:var(--white); padding:32px; border-radius:3px; border:1px solid #dcd5c9;">
+          <h4 style="font-family:var(--display); font-size:18px; margin-bottom:10px;">10-Year Structural Warranty</h4>
+          <p style="color:#635e54; font-size:14px; line-height:1.75;">Every mortise-and-tenon and dovetail joint is built by seasoned craftspeople and backed by our comprehensive 10-year workshop warranty against joinery failure.</p>
+        </div>
+
+        <div style="background:var(--white); padding:32px; border-radius:3px; border:1px solid #dcd5c9;">
+          <h4 style="font-family:var(--display); font-size:18px; margin-bottom:10px;">Direct WhatsApp Consultation</h4>
+          <p style="color:#635e54; font-size:14px; line-height:1.75;">Clicking "Order Piece" opens an instant chat with our lead designer to discuss custom sizing, timber grain photos, delivery scheduling, and secure payment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Banner -->
+    <section class="cta">
+      <div>
+        <div class="eyebrow light" style="justify-content:center">LOOKING FOR SOMETHING UNIQUE?</div>
+        <h2>Commission a <em>one-off design.</em></h2>
+        <p>If you don’t see the exact piece or proportions you require, our studio creates one-of-a-kind bespoke commissions tailored to your space.</p>
+        <a href="contact.html" class="btn">DISCUSS A CUSTOM PIECE ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="footer">
+    <div class="foot-top">
+      <div>
+        <a href="index.html" class="logo">FORMA <i>WOODWORKS</i></a>
+        <p>Thoughtful bespoke furniture and architectural woodwork, crafted with intention and built to last generations.</p>
+      </div>
+      <div>
+        <b>EXPLORE</b>
+        <a href="index.html">Home</a>
+        <a href="about.html">The Studio</a>
+        <a href="services.html">Our Services</a>
+        <a href="projects.html">Selected Projects</a>
+        <a href="collection.html">Furniture Collection</a>
+        <a href="store.html">Online Store</a>
+        <a href="process.html">Workshop Process</a>
+      </div>
+      <div>
+        <b>SERVICES</b>
+        <a href="services.html#kitchens">Kitchen Cabinetry</a>
+        <a href="services.html#furniture">Custom Furniture</a>
+        <a href="services.html#wardrobes">Wardrobes & Closets</a>
+        <a href="services.html#office">Executive Office</a>
+        <a href="services.html#architectural">Architectural Millwork</a>
+        <a href="services.html#dining">Tables & Seating</a>
+      </div>
+      <div>
+        <b>COMMISSIONS & STUDIO</b>
+        <a href="mailto:hello@formawood.example">hello@formawood.example</a>
+        <a href="tel:+442079460123">+44 (0) 20 7946 0123</a>
+        <a href="contact.html">Request a Consultation</a>
+        <form id="newsletter">
+          <label style="font-size:10px;text-transform:uppercase;color:#858076;letter-spacing:1px;">Studio Notes</label>
+          <input type="email" required placeholder="Enter your email">
+          <button class="btn btn-sm" type="submit">JOIN ↗</button>
+        </form>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Forma Woodworks Ltd. All rights reserved.</span>
+      <span>Clerkenwell Studio & Cotswolds Workshop · Visits by appointment</span>
+    </div>
+  </footer>
+
+  <a class="whats" href="https://wa.me/442079460123?text=Hello%2C%20I%27d%20like%20to%20discuss%20a%20custom%20woodworking%20project" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+  <button class="top" aria-label="Back to top">↑</button>
+
+  <div class="modal" id="modal">
+    <button aria-label="Close">×</button>
+    <img alt="Expanded photograph">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
