@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
         msgBox.textContent = 'Redirecting to WhatsApp to start your project consultation...';
       }
 
-      window.open('https://wa.me/442079460123?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+      window.open('https://wa.me/256789864290?text=' + encodeURIComponent(msg), '_blank', 'noopener');
     });
   }
 
@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const msg = `Hello Forma Woodworks,\n\nI would like to purchase / commission the following piece from your Online Store:\n• Item: ${title}\n• Listed Price: ${price}\n• Specification: ${specs}\n\nPlease confirm availability, lead time, and payment details.`;
 
-      window.open('https://wa.me/442079460123?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+      window.open('https://wa.me/256789864290?text=' + encodeURIComponent(msg), '_blank', 'noopener');
     });
   });
 
